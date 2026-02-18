@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eazy Chop Muzik</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-bar {
+    background: #111;
+    color: #00ffcc;
+    font-size: 1rem;
+    padding: 8px 20px;
+    text-align: center;
+    border-bottom: 1px solid #00ccaa;
+    user-select: none;
+  }
+  .top-bar strong {
+    color: #00ccaa;
+  }
+  header {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00ffcc;
+  }
+  main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h2 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+  }
+  .song-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00ffccaa;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .song-card:hover {
+    transform: scale(1.03);
+    background: #002222;
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #00ffcc;
+  }
+  .title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 0;
+    background: #00ffcc;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  .btn:hover {
+    background: #00ccaa;
+  }
+  .folder-card {
+    margin-top: 40px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00ffccaa;
+    padding: 30px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #00ffcc;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #00ffcc;
+    max-width: 260px;
+  }
+  .folder-icon {
+    font-size: 3rem;
+  }
+  #shorts-section {
+    margin-top: 25px;
+    display: none;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: #444;
+    font-size: 0.9rem;
+  }
+  footer small {
+    color: #666;
+    margin-top: 8px;
+    display: block;
+  }
+  footer small.links a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    display: inline-block;
+    font-weight: 700;
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  footer small.links a:hover {
+    color: #00ccaa;
+    text-decoration: underline;
+  }
+  @media (max-width: 400px) {
+    header {
+      font-size: 2rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 0;
+    }
+    footer small.links a {
+      font-size: 1rem;
+      padding: 6px 8px;
+    }
+    .top-bar {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  When you want to create or learn how to create websites like this contact us +250794677383 &nbsp;&nbsp;|&nbsp;&nbsp; Email: <strong>byiringirofilsnestor@gmail.com</strong>
+</div>
+
+<header>Eazy Chop Muzik</header>
+
+<main>
+
+  <section>
+    <h2>Songs</h2>
+    <div class="grid">
+      <article class="song-card">
+        <img class="cover" src="https://img.youtube.com/vi/miCN7BgLcYs/maxresdefault.jpg" alt="Drop her Cover" />
+        <div class="info">
+          <div class="title">Eazy Chop_Drop her [Official Video]</div>
+          <div class="buttons">
+            <a class="btn" href="https://www.youtube.com/watch?v=miCN7BgLcYs" target="_blank" rel="noopener noreferrer">Watch</a>
+            <a class="btn" href="https://www.y2mate.com/youtube/miCN7BgLcYs" target="_blank" rel="noopener noreferrer">Download</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="song-card">
+        <img class="cover" src="https://img.youtube.com/vi/XPtBmD1awkY/maxresdefault.jpg" alt="Walkin' Out Cover" />
+        <div class="info">
+          <div class="title">Eazy Chop_Walkin' Out [Official Audio]</div>
+          <div class="buttons">
+            <a class="btn" href="https://www.youtube.com/watch?v=XPtBmD1awkY" target="_blank" rel="noopener noreferrer">Watch</a>
+            <a class="btn" href="https://www.y2mate.com/youtube/XPtBmD1awkY" target="_blank" rel="noopener noreferrer">Download</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="folder-card" id="shorts-folder" title="Show/Hide Shorts Folder">
+    <span class="folder-icon">📁</span> Shorts
+  </div>
+
+  <section id="shorts-section" class="grid">
+    <article class="song-card">
+      <img class="cover" src="https://img.youtube.com/vi/OwKFc20XD1w/maxresdefault.jpg" alt="Shorts Video OwKFc20XD1w" />
+      <div class="info">
+        <div class="title">Eazy Chop Shorts Video 1</div>
+        <div class="buttons">
+          <a class="btn" href="https://www.youtube.com/shorts/OwKFc20XD1w" target="_blank" rel="noopener noreferrer">Watch</a>
+          <a class="btn" href="https://www.y2mate.com/youtube/OwKFc20XD1w" target="_blank" rel="noopener noreferrer">Download</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="song-card">
+      <img class="cover" src="https://img.youtube.com/vi/debNdb7mS5k/maxresdefault.jpg" alt="Shorts Video debNdb7mS5k" />
+      <div class="info">
+        <div class="title">Eazy Chop Shorts Video 2</div>
+        <div class="buttons">
+          <a class="btn" href="https://www.youtube.com/shorts/debNdb7mS5k" target="_blank" rel="noopener noreferrer">Watch</a>
+          <a class="btn" href="https://www.y2mate.com/youtube/debNdb7mS5k" target="_blank" rel="noopener noreferrer">Download</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="song-card">
+      <img class="cover" src="https://img.youtube.com/vi/IMZsUe27I4g/maxresdefault.jpg" alt="Shorts Video IMZsUe27I4g" />
+      <div class="info">
+        <div class="title">Eazy Chop Shorts Video 3</div>
+        <div class="buttons">
+          <a class="btn" href="https://www.youtube.com/shorts/IMZsUe27I4g" target="_blank" rel="noopener noreferrer">Watch</a>
+          <a class="btn" href="https://www.y2mate.com/youtube/IMZsUe27I4g" target="_blank" rel="noopener noreferrer">Download</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="song-card">
+      <img class="cover" src="https://img.youtube.com/vi/3BemEiNuWws/maxresdefault.jpg" alt="Shorts Video 3BemEiNuWws" />
+      <div class="info">
+        <div class="title">Eazy Chop Shorts Video 4</div>
+        <div class="buttons">
+          <a class="btn" href="https://www.youtube.com/shorts/3BemEiNuWws" target="_blank" rel="noopener noreferrer">Watch</a>
+          <a class="btn" href="https://www.y2mate.com/youtube/3BemEiNuWws" target="_blank" rel="noopener noreferrer">Download</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Eazy Chop. All rights reserved.
+  <small>Created by Eazy Chop</small>
+  <br />
+  <small>Special thanks to UMURINGA RUGAMBA Boris</small>
+  <br />
+  <small class="links">
+    <a href="https://www.youtube.com/channel/UCbj_88MfRErvm6baRPmK-DA" target="_blank" rel="noopener noreferrer">My YouTube Channel</a> | 
+    <a href="https://instagram.com/nes.tor.45" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </small>
+</footer>
+
+<script>
+  const folder = document.getElementById('shorts-folder');
+  const shortsSection = document.getElementById('shorts-section');
+
+  folder.addEventListener('click', () => {
+    if(shortsSection.style.display === 'grid') {
+      shortsSection.style.display = 'none';
+    } else {
+      shortsSection.style.display = 'grid';
+      shortsSection.scrollIntoView({behavior: 'smooth'});
+    }
+  });
+</script>
+
+</body>
+</html>
